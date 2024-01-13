@@ -1,0 +1,72 @@
+{
+  "info": {
+    "name": "InfraTruck Test",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "get list movies",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:8000/api/movies/?page_size=5&start_year=1992&end_year=1996"
+      }
+    },
+    {
+      "name": "get list best movies",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:8000/api/movies/best/2/"
+      }
+    },
+    {
+      "name": "get list films of an actor",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:8000/api/actors/Melissa%20Dennis/films/"
+      }
+    },
+    {
+      "name": "get list actors",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:8000/api/actors/?page_size=5"
+      }
+    },
+    {
+      "name": "get list directors",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:8000/api/directors/?page_size=10"
+      }
+    },
+    {
+      "name": "get list films of an director",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:8000/api/directors/Edward%20Beard/films/"
+      }
+    },
+    {
+      "name": "get nearest-to-birthday actor",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:8000/api/actors/birthdays/1981-10-21/"
+      }
+    }
+  ],
+  "variable": []
+}
